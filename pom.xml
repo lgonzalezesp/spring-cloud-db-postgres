@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>cl.lge</groupId>
 	<artifactId>Spring-Postgres-Cloud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>Spring-Postgres-Cloud</name>
 	<description>Aplicacion para utilizar bd de la nube</description>
 
@@ -48,6 +48,18 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.2.2</version>
 		</dependency>
+
+		<!-- Spring Cloud -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-spring-service-connector</artifactId>
+		</dependency>
+		<!-- Spring Cloud foundry -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-cloudfoundry-connector</artifactId>
+		</dependency>
+
 
 	</dependencies>
 
