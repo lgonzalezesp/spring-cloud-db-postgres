@@ -1,0 +1,10 @@
+path: ./target/Portal-Auto-X-KM-1.0.0.jar
+instances: 1
+buildpack: https://github.com/cloudfoundry/java-buildpack
+memory: 1050M
+services:
+- PostgreSQL-Critical-DEV
+applications:
+- name: auto-km-ws-DEV
+  env:
+    SPRING_PROFILES_ACTIVE: dev

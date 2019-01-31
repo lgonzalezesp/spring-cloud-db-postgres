@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @Profile("default")
-public class LodaDataSourceConfiguration {
+public class LocalDataSourceConfiguration {
 
     @Bean
     public DataSource dataSource() {

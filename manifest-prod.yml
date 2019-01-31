@@ -1,0 +1,10 @@
+path: Portal-Auto-X-KM-1.0.0.jar
+instances: 2
+buildpack: https://github.com/cloudfoundry/java-buildpack
+memory: 1050M
+services:
+- PostgreSQL-Critical-PROD
+applications:
+- name: auto-km-ws-prod
+  env:
+    SPRING_PROFILES_ACTIVE: prod
